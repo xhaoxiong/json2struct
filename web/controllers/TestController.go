@@ -16,10 +16,6 @@ func NewTestController() *TestController {
 	return &TestController{TestService: service.NewTestService()}
 }
 
-func (t *TestController) Get() {
-	t.ReturnSuccess()
-}
-
 func (t *TestController) PostRotate() {
 	m := make(map[string]interface{})
 	t.Ctx.ReadJSON(&m)

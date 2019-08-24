@@ -5,3 +5,12 @@
 {"level":"INFO","timestamp":"2019-08-25 02:53:57.531","file":"config/config.go:67","msg":"Config file changed: /Users/xiaoxiao/go_mod_test/json2struct/conf/config.yaml\n"}
 {"level":"ERROR","timestamp":"2019-08-25 02:54:03.510","file":"models/init.go:43","msg":"Database connection failed. Database name: json2struct","data":{"error":"Error 1049: Unknown database 'json2struct'"}}
 {"level":"INFO","timestamp":"2019-08-25 04:44:57.791","file":"config/config.go:67","msg":"Config file changed: /Users/xiaoxiao/go_mod_test/json2struct/conf/config.yaml\n"}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:30.255","file":"models/init.go:43","msg":"Database connection failed. Database name: json2struct","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:30.257","file":"models/init.go:68","msg":"自动建表失败","data":{"error":"sql: database is closed"}}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:30.884","file":"models/init.go:43","msg":"Database connection failed. Database name: json2struct","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:30.885","file":"models/init.go:68","msg":"自动建表失败","data":{"error":"sql: database is closed"}}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:31.503","file":"models/init.go:43","msg":"Database connection failed. Database name: json2struct","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-08-25 04:45:31.505","file":"models/init.go:68","msg":"自动建表失败","data":{"error":"sql: database is closed"}}
+{"level":"ERROR","timestamp":"2019-08-25 05:49:06.029","file":"models/init.go:43","msg":"Database connection failed. Database name: json2struct","data":{"error":"Error 1045: Access denied for user 'root'@'localhost' (using password: NO)"}}
+{"level":"ERROR","timestamp":"2019-08-25 05:49:06.029","file":"models/init.go:68","msg":"自动建表失败","data":{"error":"sql: database is closed"}}
+{"level":"INFO","timestamp":"2019-08-25 05:49:20.657","file":"config/config.go:67","msg":"Config file changed: /Users/xiaoxiao/go_mod_test/json2struct/conf/config.yaml\n"}

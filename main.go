@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/iris-contrib/middleware/cors"
 	"github.com/kataras/iris"
+	"github.com/kataras/iris/context"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"json2struct/config"
@@ -37,11 +38,13 @@ func newApp() *iris.Application {
 	})
 
 	app.Use(crs) //
-	//app.StaticWeb("/assets", "./web/views/admin/assets")
-	//app.RegisterView(iris.HTML("./web/views/admin", ".html"))
+	app.StaticWeb("/static", "./web/views/static")
+	app.RegisterView(iris.HTML("./web/views/", ".html"))
 	app.AllowMethods(iris.MethodOptions)
 	//app.Use(middleware.GetJWT().Serve)//是否启用jwt中间件
 	app.Configure(iris.WithOptimizations)
-
+	app.Get("/", func(ctx context.Context) {
+		ctx.View("index.html")
+	})
 	return app
 }
